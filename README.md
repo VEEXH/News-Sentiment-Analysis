@@ -24,7 +24,6 @@ Usage
 
     Replace your_news_api_key_here in the script with your News API key.
 
-python
 
 API_KEY = "your_news_api_key_here"
 
@@ -34,7 +33,6 @@ python news_sentiment_analysis.py
 
     Enter a keyword related to your interest when prompted:
 
-css
 
 Enter a keyword related to your interest: technology
 
