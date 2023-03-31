@@ -1,39 +1,50 @@
-# News Sentiment Analysis
+# News Sentiment Analyzer
 
-This Python script fetches news data from the News API, filters articles based on user preferences and keywords, and performs basic sentiment analysis on the article titles.
-Features
+The News Sentiment Analyzer is a Python script that performs detailed sentiment analysis on news articles. It scrapes the content from a given URL, processes the text, and generates a report containing the overall emotion, sentiment, and named entities in the article.
 
-    Fetches news data from a news API and performs sentiment analysis on the articles.
-    Filters articles based on user preferences and keywords.
-    Handles API response status codes and filtering articles.
-    Allows users to search for articles based on their interests and preferences.
-    Communicates the results in a user-friendly format.
+## Installation
 
-## Requirements
+1. Clone the repository:
 
-    Python 3.6 or higher
-    requests library
-    textblob library
-    News API key
-
-To install the required libraries, run:
-
-pip install requests textblob
-
-Usage
-
-    Replace your_news_api_key_here in the script with your News API key.
+``git clone https://github.com/VEEXH/News-Sentiment-Analysis.git``
+``cd News-Sentiment-Analysis``
 
 
-API_KEY = "your_news_api_key_here"
+2. Create a virtual environment:
 
-    Run the script:
-
-python news_sentiment_analysis.py
-
-    Enter a keyword related to your interest when prompted:
+``python3 -m venv venv``
 
 
-Enter a keyword related to your interest: technology
+3. Activate the virtual environment:
 
-    The script will fetch articles related to the keyword and display their titles, sentiment, and URLs.
+- On Windows:
+
+  ```
+  venv\Scripts\activate
+  ```
+
+- On Linux/MacOS:
+
+  ```
+  source venv/bin/activate
+  ```
+
+4. Install the required dependencies:
+
+``pip install -r requirements.txt``
+
+
+## Usage
+
+Run the script by providing a news article URL as an argument:
+
+``python news_sentiment_analyzer.py https://example.com/news-article``
+
+
+The script will scrape the content from the URL, preprocess the text, and analyze the emotions, sentiment, and named entities. It will then generate a report and print the results.
+
+## License
+
+This project is licensed under the terms of the MIT License.
+
+
