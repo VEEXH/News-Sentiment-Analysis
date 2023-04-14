@@ -7,6 +7,7 @@ The News Sentiment Analyzer is a Python script that performs detailed sentiment 
 1. Clone the repository:
 
 ``git clone https://github.com/VEEXH/News-Sentiment-Analysis.git``
+
 ``cd News-Sentiment-Analysis``
 
 
